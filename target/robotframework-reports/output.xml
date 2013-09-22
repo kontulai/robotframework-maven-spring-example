@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.8.1 (Jython 2.5.3 on java1.6.0_51)" generated="20130922 12:08:12.644">
+<suite source="/Users/ilmarikontulainen/Documents/Projects/steeri/MavenSpringExample/src/test/robotframework/acceptance" id="s1" name="Acceptance">
+<suite source="/Users/ilmarikontulainen/Documents/Projects/steeri/MavenSpringExample/src/test/robotframework/acceptance/multiples_of.txt" id="s1-s1" name="Multiples Of">
+<test id="s1-s1-t1" name="Hello world">
+<kw type="kw" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello world!</arg>
+</arguments>
+<msg timestamp="20130922 12:08:14.199" level="INFO">Hello world!</msg>
+<status status="PASS" endtime="20130922 12:08:14.201" starttime="20130922 12:08:14.197"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" critical="yes" endtime="20130922 12:08:14.203" starttime="20130922 12:08:14.191"></status>
+</test>
+<test id="s1-s1-t2" name="Test multiples should contain">
+<kw type="kw" name="@{multiples} = org.robotframework.MultiplesLibrary.Get Multiples Below">
+<doc></doc>
+<arguments>
+<arg>3</arg>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20130922 12:08:14.253" level="INFO">@{multiples} = [ 3 | 6 | 9 ]</msg>
+<status status="PASS" endtime="20130922 12:08:14.251" starttime="20130922 12:08:14.217"></status>
+</kw>
+<kw type="kw" name="should contain integer">
+<doc></doc>
+<arguments>
+<arg>${multiples}</arg>
+<arg>3</arg>
+</arguments>
+<kw type="kw" name="${converted} = BuiltIn.Convert To Integer">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>${number}</arg>
+</arguments>
+<msg timestamp="20130922 12:08:14.267" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20130922 12:08:14.269" level="INFO">${converted} = 3</msg>
+<status status="PASS" endtime="20130922 12:08:14.268" starttime="20130922 12:08:14.263"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>${container}</arg>
+<arg>${converted}</arg>
+</arguments>
+<status status="PASS" endtime="20130922 12:08:14.276" starttime="20130922 12:08:14.271"></status>
+</kw>
+<status status="PASS" endtime="20130922 12:08:14.278" starttime="20130922 12:08:14.255"></status>
+</kw>
+<kw type="kw" name="should contain integer">
+<doc></doc>
+<arguments>
+<arg>${multiples}</arg>
+<arg>6</arg>
+</arguments>
+<kw type="kw" name="${converted} = BuiltIn.Convert To Integer">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>${number}</arg>
+</arguments>
+<msg timestamp="20130922 12:08:14.292" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20130922 12:08:14.294" level="INFO">${converted} = 6</msg>
+<status status="PASS" endtime="20130922 12:08:14.293" starttime="20130922 12:08:14.289"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>${container}</arg>
+<arg>${converted}</arg>
+</arguments>
+<status status="PASS" endtime="20130922 12:08:14.299" starttime="20130922 12:08:14.295"></status>
+</kw>
+<status status="PASS" endtime="20130922 12:08:14.301" starttime="20130922 12:08:14.280"></status>
+</kw>
+<kw type="kw" name="should contain integer">
+<doc></doc>
+<arguments>
+<arg>${multiples}</arg>
+<arg>9</arg>
+</arguments>
+<kw type="kw" name="${converted} = BuiltIn.Convert To Integer">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>${number}</arg>
+</arguments>
+<msg timestamp="20130922 12:08:14.312" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20130922 12:08:14.314" level="INFO">${converted} = 9</msg>
+<status status="PASS" endtime="20130922 12:08:14.314" starttime="20130922 12:08:14.310"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>${container}</arg>
+<arg>${converted}</arg>
+</arguments>
+<status status="PASS" endtime="20130922 12:08:14.331" starttime="20130922 12:08:14.316"></status>
+</kw>
+<status status="PASS" endtime="20130922 12:08:14.333" starttime="20130922 12:08:14.303"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" critical="yes" endtime="20130922 12:08:14.334" starttime="20130922 12:08:14.207"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20130922 12:08:14.339" starttime="20130922 12:08:13.312"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20130922 12:08:14.346" starttime="20130922 12:08:12.653"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" id="s1" fail="0" name="Acceptance">Acceptance</stat>
+<stat pass="2" id="s1-s1" fail="0" name="Multiples Of">Acceptance.Multiples Of</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

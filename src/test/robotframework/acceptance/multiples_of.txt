@@ -1,0 +1,21 @@
+*** Settings ***
+Library    org.robotframework.MultiplesLibrary
+
+
+*** Test Cases ***
+Hello world
+	Log    Hello world!
+
+Test multiples should contain
+    @{multiples}    get Multiples Below    3    10
+    should contain integer    ${multiples}    3   
+	should contain integer    ${multiples}    6
+	should contain integer    ${multiples}    9
+
+
+*** Keywords ***
+should contain integer
+    [arguments]    ${container}    ${number}
+    [return]    ${converted}
+    ${converted}=    convert to integer    ${number}
+    should contain    ${container}    ${converted}
